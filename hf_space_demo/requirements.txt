@@ -1,0 +1,8 @@
+gradio>=3.0
+torch
+numpy
+opencv-python
+decord
+transformers
+huggingface_hub
+pillow

@@ -1,0 +1,38 @@
+{
+  "labels": {
+    "Aku": 0,
+    "Bapak": 1,
+    "Bawa": 2,
+    "Guru": 3,
+    "Ibu": 4,
+    "Kamu": 5,
+    "Mau": 6,
+    "Pulang": 7,
+    "Sekolah": 8,
+    "Suka": 9
+  },
+  "stats": {
+    "folds": {
+      "fold_1": {
+        "train_samples": 2956,
+        "val_samples": 185
+      },
+      "fold_2": {
+        "train_samples": 2960,
+        "val_samples": 184
+      },
+      "fold_3": {
+        "train_samples": 2956,
+        "val_samples": 185
+      },
+      "fold_4": {
+        "train_samples": 2956,
+        "val_samples": 185
+      },
+      "fold_5": {
+        "train_samples": 2956,
+        "val_samples": 185
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+======================================================================
+  HASIL BENCHMARK INFERENCE TIME — SEMUA MODEL SIBI
+  Device  : NVIDIA GeForce RTX 3050 Laptop GPU (CUDA 12.4)
+  Warmup  : 10x  |  Runs : 50x  (dummy) / 20x  (realvideo, n=10 video)
+======================================================================
+
+[1] VideoMAE ViT-Base K400  (dummy tensor, forward pass only)
+  Fold 1 : 172.53 ms
+  Fold 2 : 182.10 ms
+  Fold 3 : 171.63 ms
+  Fold 4 : 178.23 ms
+  Fold 5 : 183.91 ms
+  Rata-rata: 177.68 ms
+
+[2] VideoMAE ViT-Small SSv2  (dummy tensor, forward pass only)
+  Fold 1 :  66.96 ms
+  Fold 2 :  68.81 ms
+  Fold 3 :  73.50 ms
+  Fold 4 :  78.42 ms
+  Fold 5 :  80.78 ms
+  Rata-rata:  73.69 ms
+
+[3] ViViT-B/16x2  (dummy tensor, forward pass only)
+  Fold 1 : 496.06 ms
+  Fold 2 : 546.96 ms
+  Fold 3 : 550.56 ms
+  Fold 4 : 545.46 ms
+  Fold 5 : 540.04 ms
+  Rata-rata: 535.81 ms
+
+[4] I3D RGB  (dummy tensor, forward pass only)
+  Fold 1 :  96.40 ms
+  Fold 2 : 105.24 ms
+  Fold 3 : 103.27 ms
+  Fold 4 : 104.42 ms
+  Fold 5 : 109.23 ms
+  Rata-rata: 103.71 ms
+
+----------------------------------------------------------------------
+
+[5] VideoMAE ViT-Base K400  (end-to-end, video asli)
+  Fold 1 : 733.46 ms
+  Fold 2 : 772.81 ms
+  Fold 3 : 727.02 ms
+  Fold 4 : 646.13 ms
+  Fold 5 : 672.89 ms
+  Rata-rata: 710.46 ms
+
+[6] VideoMAE ViT-S SSv2  (end-to-end, video asli)
+  Fold 1 : 685.18 ms
+  Fold 2 : 680.02 ms
+  Fold 3 : 671.17 ms
+  Fold 4 : 667.57 ms
+  Fold 5 : 684.19 ms
+  Rata-rata: 677.62 ms
+
+[7] ViViT-B/16x2  (end-to-end, video asli)
+  Fold 1 : 1239.08 ms
+  Fold 2 : 1188.08 ms
+  Fold 3 : 1343.76 ms
+  Fold 4 : 1087.15 ms
+  Fold 5 : 1110.79 ms
+  Rata-rata: 1193.77 ms
+
+[8] I3D RGB  (end-to-end, video asli)
+  Fold 1 :  578.22 ms
+  Fold 2 :  513.17 ms
+  Fold 3 :  437.53 ms
+  Fold 4 :  550.14 ms
+  Fold 5 :  594.21 ms
+  Rata-rata: 534.65 ms
+
+======================================================================

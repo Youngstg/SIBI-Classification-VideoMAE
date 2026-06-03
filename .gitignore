@@ -1,0 +1,50 @@
+# Model weights
+*.pth
+*.pt
+*.pth.tar
+*.bin
+*.safetensors
+
+# Video dataset
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Credentials (JANGAN commit ini!)
+kaggle.json
+
+# Claude internal
+.claude/
+
+# IDE
+.vscode/
+
+# Large pretrained backbone & checkpoints
+work_dirs/vitb_*/
+work_dirs/vits_*/
+WLASL/checkpoints/
+work_dirs_all_experiment/
+pretrained/
+
+# Dataset zip
+sibi_dataset.zip
+*.zip
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Nested git backups
+*.git.bak/
+.git.bak/
+
+# HuggingFace upload scripts (contain credentials)
+scripts/upload_model.py
+scripts/upload_readme_to_hf.py

@@ -1,0 +1,23 @@
+# ViViT / Video Experiment - Requirements
+# Catatan:
+# - Untuk RunPod RTX 5090 / Blackwell, PyTorch di-install terpisah lewat
+#   setup_runpod_vivit.sh agar memakai build yang kompatibel.
+
+# Video & Vision
+timm==0.4.12
+decord==0.6.0
+opencv-python==4.8.1.78
+Pillow
+einops
+
+# Pendukung VideoMAE
+transformers==4.36.2
+tensorboardX
+numpy==1.26.4
+six
+scikit-learn
+pandas
+matplotlib
+openpyxl
+scipy
+kaggle

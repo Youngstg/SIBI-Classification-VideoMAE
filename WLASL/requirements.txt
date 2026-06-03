@@ -1,0 +1,24 @@
+# --- Core Deep Learning (Optimized for RTX 4090) ---
+torch
+torchvision
+torchaudio
+
+# --- Video Processing & Computer Vision ---
+opencv-python
+decord
+imageio
+scikit-video
+
+# --- Data Science & Utilities ---
+numpy
+pandas
+scikit-learn
+matplotlib
+scipy
+tqdm
+h5py
+
+# --- Formatting & Config (Penting untuk SIBI) ---
+pyyaml
+jsonlines
+configparser
