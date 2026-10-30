@@ -330,7 +330,7 @@ def plot_confusion_matrix(
                 j, i, format(cm[i, j], "d"),
                 ha="center", va="center",
                 color="white" if cm[i, j] > threshold else "black",
-                fontsize=10,
+                fontsize=24,
             )
 
     mean_acc = sum(fold_accuracies) / len(fold_accuracies) if fold_accuracies else 0.0

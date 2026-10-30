@@ -1,8 +1,11 @@
-gradio>=3.0
+gradio
 torch
 numpy
-opencv-python
+opencv-python-headless
 decord
 transformers
 huggingface_hub
 pillow
+timm
+einops
+av

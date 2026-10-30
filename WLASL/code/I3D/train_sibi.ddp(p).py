@@ -584,7 +584,7 @@ def generate_reports(fold_accuracies, class_names):
                     ax.text(j, i, format(cm[i,j],'d'),
                             ha="center", va="center",
                             color="white" if cm[i,j]>thresh
-                            else "black", fontsize=10)
+                            else "black", fontsize=24)
             mv = sum(fold_accuracies)/len(fold_accuracies) \
                 if fold_accuracies else 0
             ax.set_ylabel('Label Sebenarnya (Ground Truth)',
@@ -631,7 +631,7 @@ def generate_reports(fold_accuracies, class_names):
                         ax.text(j,i,format(cm_f[i,j],'d'),
                                 ha="center",va="center",
                                 color="white" if cm_f[i,j]>thr
-                                else "black",fontsize=8)
+                                else "black",fontsize=20)
                 ax.set_title(
                     f'Fold {fi} — '
                     f'Acc: {accuracy_score(gt,pred)*100:.2f}%',

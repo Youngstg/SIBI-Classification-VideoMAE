@@ -3,8 +3,32 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from timm.models.layers import drop_path, to_2tuple, trunc_normal_
-from timm.models.registry import register_model
+import collections.abc
+try:
+    from timm.models.layers import drop_path, to_2tuple, trunc_normal_
+    from timm.models.registry import register_model
+except Exception:
+    try:
+        from timm.layers import drop_path, to_2tuple, trunc_normal_
+        from timm.models import register_model
+    except Exception:
+        from torch.nn.init import trunc_normal_
+
+        def to_2tuple(x):
+            return tuple(x) if isinstance(x, collections.abc.Iterable) else (x, x)
+
+        def drop_path(x, drop_prob: float = 0.0, training: bool = False, scale_by_keep: bool = True):
+            if drop_prob == 0.0 or not training:
+                return x
+            keep_prob = 1.0 - drop_prob
+            shape = (x.shape[0],) + (1,) * (x.ndim - 1)
+            random_tensor = x.new_empty(shape).bernoulli_(keep_prob)
+            if keep_prob > 0.0 and scale_by_keep:
+                random_tensor.div_(keep_prob)
+            return x * random_tensor
+
+        def register_model(fn):
+            return fn
 import torch.utils.checkpoint as checkpoint
 
 
